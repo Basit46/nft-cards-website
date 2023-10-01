@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Mono:wght@300;400;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  nav .nav-links a {
+    @apply uppercase tracking-[-0.8px] text-[#272727] text-[16px] font-normal cursor-pointer;
+  }
+  nav .social-links svg {
+    @apply text-[25px];
+  }
+
+  .stats-section .grid-cont div div {
+    @apply w-[410px] p-[30px] flex flex-col items-center justify-center gap-[12px];
+  }
+  .stats-section .grid-cont .line {
+    @apply w-0 h-[110px] border-l-[1px] border-[#525252] p-[00px] block gap-[0px];
+  }
+  .stats-section .grid-cont div h1 {
+    @apply font-Anton text-[2.5rem] tracking-[-1.2px] leading-[44px];
+  }
+  .stats-section .grid-cont div p {
+    @apply font-medium tracking-[-0.48px] text-[#949494];
+  }
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: rgb(229, 227, 219);
+}
+
+.hero .slide {
+  animation: slide-left 12s linear infinite;
+}
+@keyframes slide-left {
+  to {
+    transform: translateX(-50%);
+  }
+}
