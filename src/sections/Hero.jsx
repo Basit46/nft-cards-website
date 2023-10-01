@@ -32,7 +32,7 @@ const Hero = () => {
       <div className="relative mx-[30px] h-[700px] mt-[20px] rounded-[10px] overflow-hidden">
         {images.map((img, index) => (
           <img
-            key={img}
+            key={index}
             className={`${
               currIndex == index ? "opacity-100" : "opacity-0"
             } absolute top-0 left-0 w-full h-full object-cover duration-1000 rounded-[10px]`}
