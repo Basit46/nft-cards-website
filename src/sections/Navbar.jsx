@@ -37,20 +37,16 @@ const Navbar = ({ isOpen, setIsOpen }) => {
   return (
     <nav
       className={`${
-        show ? "translate-y-0" : "xl:-translate-y-[100px]"
-      } fixed top-0 left-0 w-full z-[10] bg-navbarBg px-[30px] duration-500`}
+        show ? "translate-y-0" : "-translate-y-[100px]"
+      } fixed top-0 left-0 w-full bg-navbarBg z-[10] px-[30px] duration-500`}
     >
-      <div className="flex items-center gap-[200px] justify-between py-[30px] border-b-[1px] border-black">
+      <div className="w-full flex items-center xl:gap-[200px] justify-between py-[30px] border-b-[1px] border-black">
         <img src={logo} width="127.94" height="20.4" alt="logo" />
 
         <div
-          onClick={() => {
-            setIsOpen(false);
-            alert("Now");
-          }}
           className={`${
             isOpen ? "h-[100vh]" : "h-0"
-          } fixed left-0 top-[86px] overflow-hidden bottom-0 w-full xl:w-fit xl:h-fit duration-500 px-[30px] xl:px-0 bg-navbarBg xl:static flex-1 flex flex-col xl:flex-row xl:justify-between`}
+          } fixed left-0 top-[86px] bg-navbarBg overflow-hidden bottom-0 w-full xl:w-fit xl:h-fit duration-500 px-[30px] xl:px-0 xl:static flex-1 flex flex-col xl:flex-row xl:justify-between`}
         >
           <div className="nav-links flex flex-col xl:flex-row xl:items-center py-[20px] xl:py-0 gap-[5px] xl:gap-[20px]">
             <ScrollLink
@@ -96,7 +92,7 @@ const Navbar = ({ isOpen, setIsOpen }) => {
           </div>
         </div>
 
-        <button className="block xl:hidden w-fit">
+        <button className="xl:hidden w-fit">
           {isOpen ? (
             <FaTimes
               onClick={() => setIsOpen(false)}

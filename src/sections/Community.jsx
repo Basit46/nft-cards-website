@@ -13,38 +13,41 @@ const Community = () => {
   const slide1Ref = useRef();
   const slide2Ref = useRef();
 
-  useEffect(() => {
-    gsap.to(slide1Ref.current, {
-      y: -150,
-      duration: 3,
-      scrollTrigger: {
-        trigger: sectionRef.current,
-        scrub: 2,
-        start: "top 30%",
-      },
-    });
+  // useEffect(() => {
+  //   gsap.to(slide1Ref.current, {
+  //     y: -150,
+  //     duration: 3,
+  //     scrollTrigger: {
+  //       trigger: sectionRef.current,
+  //       scrub: 2,
+  //       start: "top 30%",
+  //     },
+  //   });
 
-    gsap.to(slide2Ref.current, {
-      y: 150,
-      duration: 3,
-      scrollTrigger: {
-        trigger: sectionRef.current,
-        scrub: 2,
-        start: "top 30%",
-      },
-    });
-  }, []);
+  //   gsap.to(slide2Ref.current, {
+  //     y: 150,
+  //     duration: 3,
+  //     scrollTrigger: {
+  //       trigger: sectionRef.current,
+  //       scrub: 2,
+  //       start: "top 30%",
+  //     },
+  //   });
+  // }, []);
 
   return (
     <section
       ref={sectionRef}
-      className="mt-[130px] mx-[30px] h-[543px] bg-grey text-white rounded-[10px] flex justify-center gap-[80px] items-center"
+      className="mt-[130px] mx-[30px] h-fit xl:h-[543px] bg-grey py-[40px] xl:py-0 px-[20px] xl:px-0 text-white rounded-[10px] flex flex-col-reverse xl:flex-row justify-center gap-[80px] items-center"
     >
-      <div className="w-fit h-full overflow-y-hidden">
-        <div className="w-fit h-fit flex gap-[50px]">
+      <div className="w-full xl:w-fit h-full overflow-y-hidden">
+        <div className="w-full xl:w-fit h-fit flex gap-[30px] xl:gap-[50px]">
           {/* Slide 1 */}
-          <div ref={slide1Ref} className="flex flex-col gap-[30px] mt-[-220px]">
-            <div className="w-[230px] h-[368px] rounded-[10px] overflow-hidden">
+          <div
+            ref={slide1Ref}
+            className="flex flex-row xl:flex-col gap-[30px] xl:mt-[-220px]"
+          >
+            <div className="w-[300px] vsm:w-[50%] xl:w-[230px] h-fit xl:h-[368px] rounded-[10px] overflow-hidden">
               <img
                 src={img1}
                 className="h-full w-full object-cover"
@@ -52,7 +55,7 @@ const Community = () => {
               />
             </div>
 
-            <div className="w-[230px] h-[368px] rounded-[10px] overflow-hidden">
+            <div className="w-[300px] vsm:w-[50%] xl:w-[230px] h-fit xl:h-[368px] rounded-[10px] overflow-hidden">
               <img
                 src={img2}
                 className="h-full w-full object-cover"
@@ -62,8 +65,11 @@ const Community = () => {
           </div>
 
           {/* Slide 2 */}
-          <div ref={slide2Ref} className="flex flex-col gap-[30px] mt-[-10px]">
-            <div className="w-[230px] h-[368px] rounded-[10px] overflow-hidden">
+          <div
+            ref={slide2Ref}
+            className="flex flex-row xl:flex-col gap-[30px] xl:mt-[-10px]"
+          >
+            <div className="w-[300px] vsm:w-[50%] xl:w-[230px] h-fit xl:h-[368px] rounded-[10px] overflow-hidden">
               <img
                 src={img3}
                 className="h-full w-full object-cover"
@@ -71,7 +77,7 @@ const Community = () => {
               />
             </div>
 
-            <div className="w-[230px] h-[368px] rounded-[10px] overflow-hidden">
+            <div className="w-[300px] vsm:w-[50%] xl:w-[230px] h-fit xl:h-[368px] rounded-[10px] overflow-hidden">
               <img
                 src={img4}
                 className="h-full w-full object-cover"
@@ -82,11 +88,11 @@ const Community = () => {
         </div>
       </div>
 
-      <div className="w-[35%] flex flex-col items-center">
-        <h1 className="font-Anton text-center text-[87px] tracking-[-2.6px] leading-[95px]">
+      <div className="w-full xl:w-[35%] flex flex-col items-center">
+        <h1 className="font-Anton text-center text-[50px] xl:text-[87px] tracking-[-2.6px] leading-[1.1] xl:leading-[95px]">
           Join The Community
         </h1>
-        <p className="mt-[20px] mb-[40px] text-[#949494] tracking-[-0.8px] text-center">
+        <p className="w-[80%] vsm:w-full mt-[20px] mb-[40px] text-[#949494] tracking-[-0.8px] text-center">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
           iusto laudantium, magni eum id eos rerum.
         </p>

@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer
       id="contact"
-      className="mt-[80px] mb-[20px] py-[80px] min-h-[30vh] border-y-black border-[1px] mx-[30px] flex justify-between"
+      className="mt-[80px] mb-[20px] py-[80px] min-h-[30vh] border-y-black border-[1px] mx-[30px] flex flex-col xl:flex-row gap-[40px] xl:gap-0 justify-between"
     >
       <div>
         <img src={logo} width={205} alt="logo" />
@@ -34,18 +34,18 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="mr-[50px]">
-        <h1 className="text-[2.5rem] font-Anton">
+      <div className="xl:mr-[50px]">
+        <h1 className="text-[2.5rem] leading-[1.2] font-Anton">
           DEVELOPED BY{" "}
           <span className="text-orange">
             <a href="mailto:hassanbasitope@gmail.com">HASSAN BASIT</a>
           </span>
-          <span className="text-[1.3rem] font-RobotoMono">
+          <span className="block xl:inline text-[1.3rem] font-RobotoMono">
             <sup>(Turning Coffee☕ into Code)</sup>
           </span>
         </h1>
 
-        <h1 className="text-[2.5rem] font-Anton">
+        <h1 className="mt-[20px] text-[2.5rem] leading-[1.2] font-Anton">
           DESIGNED BY{" "}
           <span className="text-orange">
             <a href="mailto:Info@db.Com">DIGITAL BUTLERS</a>

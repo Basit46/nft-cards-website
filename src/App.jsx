@@ -19,7 +19,7 @@ const App = () => {
     <div
       className={`${
         isOpen && "h-[100vh] overflow-y-hidden"
-      } max-w-[1366px] mx-auto w-full font-RobotoMono`}
+      } max-w-[1366px] mx-auto font-RobotoMono`}
     >
       <Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
       <Hero />
