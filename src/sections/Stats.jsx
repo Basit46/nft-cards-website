@@ -5,7 +5,7 @@ const Stats = () => {
   return (
     <section
       id="stats"
-      className="stats-section mt-[100px] w-full bg-[#272727] py-[120px] text-white"
+      className="stats-section mt-[100px] w-full bg-[#272727] py-[60px] vsm:py-[120px] text-white"
     >
       <div className="relative px-[20px] vsm:px-[30px]">
         <Description text="/STATS" />
