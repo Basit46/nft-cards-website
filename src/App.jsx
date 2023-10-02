@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Category from "./sections/Category";
 import Collections from "./sections/Collections";
 import Community from "./sections/Community";
@@ -13,9 +13,15 @@ import Team from "./sections/Team";
 import TheFuture from "./sections/TheFuture";
 
 const App = () => {
+  //To open and close navbar
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="max-w-[1366px] mx-auto w-full font-RobotoMono">
-      <Navbar />
+    <div
+      className={`${
+        isOpen && "h-[100vh] overflow-y-hidden"
+      } max-w-[1366px] mx-auto w-full font-RobotoMono`}
+    >
+      <Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
       <Hero />
       <TheFuture />
       <Stats />

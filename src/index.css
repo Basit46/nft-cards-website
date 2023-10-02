@@ -6,7 +6,7 @@
 
 @layer components {
   nav .nav-links a {
-    @apply uppercase tracking-[-0.8px] text-[#272727] text-[16px] font-normal cursor-pointer;
+    @apply font-Anton xl:font-RobotoMono uppercase tracking-[-0.8px] text-[#272727] text-[2rem] xl:text-[16px] font-normal cursor-pointer;
   }
   nav .social-links svg {
     @apply text-[25px];
