@@ -1,9 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import heroImg1 from "../assets/heroImg1.jpg";
 import heroImg2 from "../assets/heroimg2.jpg";
 import heroImg3 from "../assets/heroimg3.png";
+import Splitting from "splitting";
+import gsap from "gsap";
 
 const Hero = () => {
+  const heroTextRef = useRef();
+
   const images = [heroImg1, heroImg2, heroImg3];
   const [currIndex, setCurrIndex] = useState(0);
 
@@ -24,11 +28,31 @@ const Hero = () => {
     };
   }, []);
 
+  //GSAP animation for hero text
+  useEffect(() => {
+    const chars = Splitting({
+      target: heroTextRef.current,
+      by: "chars",
+    });
+
+    chars[0].chars.forEach((char, index) => {
+      gsap.fromTo(
+        char,
+        { opacity: 0 },
+        { opacity: 1, duration: 2, delay: index * 0.05 }
+      );
+    });
+  }, []);
+
   return (
     <section className="hero w-full mt-[140px]">
-      <h1 className="w-full px-[20px] vsm:px-[30px] text-left font-Anton text-[#f54a14] text-[4.8rem] vsm:text-[6rem] xmd:text-[8.72rem] tracking-[-2.76px] leading-[1] xmd:leading-[136.62px]">
+      <h1
+        ref={heroTextRef}
+        className="w-full px-[20px] vsm:px-[30px] text-left font-Anton text-[#f54a14] text-[4.8rem] vsm:text-[6rem] xmd:text-[8.72rem] tracking-[-2.76px] leading-[1] xmd:leading-[136.62px]"
+      >
         DIGITAL COLLECTION CARDS
       </h1>
+
       <div className="relative mx-[20px] vsm:mx-[30px] h-[350px] vsm:h-[400px] md:h-[700px] mt-[20px] rounded-[10px] overflow-hidden">
         {images.map((img, index) => (
           <img

@@ -36,20 +36,20 @@ const Roadmap = () => {
 
   //Reload so as to get the updated value of window.innerwidth
   //in case user resize their browser
-  const handleReload = () => {
-    if (window.innerWidth < 451) {
-      return;
-    }
-    window.location.reload();
-  };
+  // const handleReload = () => {
+  //   if (window.innerWidth < 451) {
+  //     return;
+  //   }
+  //   window.location.reload();
+  // };
 
-  useEffect(() => {
-    window.addEventListener("resize", handleReload);
+  // useEffect(() => {
+  //   window.addEventListener("resize", handleReload);
 
-    return () => {
-      window.removeEventListener("resize", handleReload);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("resize", handleReload);
+  //   };
+  // }, []);
 
   return (
     <div
