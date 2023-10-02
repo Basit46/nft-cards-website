@@ -11,7 +11,7 @@ const Roadmap = () => {
   const slideRef = useRef(null);
 
   useEffect(() => {
-    if (window.innerWidth < 1280) {
+    if (window.innerWidth < 1281) {
       return;
     } else {
       sectionRef.current.style.height = slideRef.current.clientWidth + "px";
@@ -37,6 +37,9 @@ const Roadmap = () => {
   //Reload so as to get the updated value of window.innerwidth
   //in case user resize their browser
   const handleReload = () => {
+    if (window.innerWidth < 451) {
+      return;
+    }
     window.location.reload();
   };
 

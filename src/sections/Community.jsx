@@ -14,7 +14,7 @@ const Community = () => {
   const slide2Ref = useRef();
 
   useEffect(() => {
-    if (window.innerWidth < 1280) {
+    if (window.innerWidth < 1281) {
       return;
     }
     gsap.to(slide1Ref.current, {
