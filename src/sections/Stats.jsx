@@ -5,17 +5,17 @@ const Stats = () => {
   return (
     <section
       id="stats"
-      className="stats-section mt-[100px] w-full bg-[#272727] py-[120px] px-[30px] text-white"
+      className="stats-section mt-[100px] w-full bg-[#272727] py-[120px] text-white"
     >
-      <div className="relative">
+      <div className="relative px-[30px]">
         <Description text="/STATS" />
 
-        <h1 className="text-center font-[Anton] text-[87px] tracking-[-2.6px] leading-[95.7px]">
+        <h1 className="xmd:text-center font-[Anton] pt-[30px] xmd:pt-0 text-[45px] vsm:text-[50px] xmd:text-[70px] xl:text-[87px] tracking-[-1px] vsm:tracking-[-2.6px] leading-[1.1] xmd:leading-[95px]">
           We Got Stats
         </h1>
 
         <div className="mt-[80px] grid-cont">
-          <div className="flex justify-between items-center">
+          <div className="flex flex-col sm:flex-row justify-between items-center">
             <div className="border-y-[1px] border-[#525252]">
               <h1>12,000</h1> <p>TOTAL ASSETS</p>
             </div>
@@ -29,7 +29,7 @@ const Stats = () => {
             </div>
           </div>
 
-          <div className="flex justify-between items-center">
+          <div className="flex flex-col sm:flex-row justify-between items-center">
             <div className="border-b-[1px] border-[#525252]">
               <h1>12,564</h1> <p>TOTAL VOLUME</p>
             </div>

@@ -10,7 +10,7 @@ export default {
       },
       screens: {
         vsm: "400px",
-        xmd: "800px",
+        xmd: "900px",
       },
       fontFamily: {
         RobotoMono: ["Roboto Mono", "sans-serif"],

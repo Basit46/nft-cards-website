@@ -2,7 +2,7 @@ import React from "react";
 
 const Member = ({ img, name, role }) => {
   return (
-    <div className="w-[410px] h-[527px]">
+    <div className="w-full vsm:w-[410px] h-[527px]">
       <div className="h-[480px] overflow-hidden rounded-[10px] group">
         <img
           src={img}

@@ -8,16 +8,16 @@ const Category = () => {
   return (
     <section
       id="category"
-      className="mt-[160px] mb-[80px] w-full px-[30px] relative min-h-[50vh]"
+      className="mt-[80px] vsm:mt-[160px] mb-[80px] w-full px-[30px] relative min-h-[50vh]"
     >
       <Description text="/CATEGORY" />
 
-      <h1 className="ml-[30%] font-Anton text-[87px] tracking-[-2.6px] leading-[95.7px]">
+      <h1 className="xmd:ml-[30%] font-Anton pt-[30px] xmd:pt-0 text-[45px] vsm:text-[50px] xmd:text-[70px] xl:text-[87px] tracking-[-1px] vsm:tracking-[-2.6px] leading-[1.1] xmd:leading-[95px]">
         Choose <span className="text-orange">Your Category</span>
       </h1>
 
-      <div className="mt-[70px] w-full flex">
-        <div className="w-[33.3%] h-[612px] py-[42px] pr-[14px] border-y-[1px] border-[#27272733]">
+      <div className="mt-[70px] w-full xmd:flex">
+        <div className="w-full xmd:w-[33.3%] h-[612px] py-[42px] xmd:pr-[14px] border-y-[1px] border-[#27272733]">
           <div className="relative w-full h-[500px] group duration-200 rounded-[10px] overflow-hidden">
             <img
               src={img1}
@@ -38,7 +38,7 @@ const Category = () => {
           </div>
         </div>
 
-        <div className="w-[33.3%] h-[612px] py-[42px] px-[14px] border-y-[1px] border-x-[1px] border-[#27272733]">
+        <div className="w-full xmd:w-[33.3%] h-[612px] py-[42px] xmd:px-[14px] border-b-[1px] xmd:border-y-[1px] xmd:border-x-[1px] border-[#27272733]">
           <div className="relative w-full h-[500px] group rounded-[10px] overflow-hidden">
             <img
               src={img2}
@@ -59,7 +59,7 @@ const Category = () => {
           </div>
         </div>
 
-        <div className="w-[33.3%] h-[612px] py-[42px] pl-[14px] border-y-[1px] border-[#27272733]">
+        <div className="w-full xmd:w-[33.3%] h-[612px] py-[42px] xmd:pl-[14px] border-b-[1px] xmd:border-y-[1px] border-[#27272733]">
           <div className="relative w-full h-[500px] group rounded-[10px] overflow-hidden">
             <img
               src={img3}

@@ -2,7 +2,7 @@ import React from "react";
 
 const Collection = ({ img, text1, text2 }) => {
   return (
-    <div className="w-[23.5%] group hover:w-[60%] h-[576px] duration-[0.4s] overflow-hidden">
+    <div className="w-full xmd:w-[23.5%] group xmd:hover:w-[60%] h-[576px] duration-[0.4s] overflow-hidden">
       <div className="h-[550px] rounded-[10px] overflow-hidden">
         <img
           src={img}
@@ -10,7 +10,7 @@ const Collection = ({ img, text1, text2 }) => {
           alt="collection"
         />
       </div>
-      <div className="opacity-0 group-hover:opacity-100 w-full flex justify-between">
+      <div className="xmd:opacity-0 xmd:group-hover:opacity-100 w-full flex justify-between">
         <p className="text-grey font-medium tracking-[-0.48px]">{text1}</p>
         <p className="text-[#949494] font-medium tracking-[-0.48px]">
           /{text2}

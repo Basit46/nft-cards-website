@@ -3,13 +3,14 @@ import { PiMinusLight, PiPlusLight } from "react-icons/pi";
 
 const Question = () => {
   const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div
       onClick={() => setIsOpen((prev) => !prev)}
       className="w-full h-fit bg-white rounded-[10px] p-[30px] group"
     >
       <div className="w-full flex justify-between items-center">
-        <h1 className="font-Anton text-grey group-hover:text-orange duration-200 text-[30px] tracking-[-0.3px] leading-[36px]">
+        <h1 className="font-Anton text-grey vsm:group-hover:text-orange duration-200 text-[20px] vsm:text-[25px] sm:text-[30px] tracking-[-0.3px] leading-[1.2] vsm:leading-[36px]">
           Why Buy Our Digital NFT Cards?
         </h1>
         <button>
@@ -20,12 +21,8 @@ const Question = () => {
           )}
         </button>
       </div>
-      <div
-        className={`${
-          isOpen ? "h-[73px]" : "h-0"
-        } pt-[10px] duration-500 overflow-hidden`}
-      >
-        <p className="w-[60%] tracking-[-0.8px] leading-[24px] text-[#525252]">
+      <div className={`${isOpen ? "h-fit" : "h-0"} pt-[10px]  overflow-hidden`}>
+        <p className="w-full sm:w-[60%] tracking-[-0.8px] leading-[24px] text-[#525252]">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem nam
           exercitationem officiis odit consectetur adipisicing
         </p>

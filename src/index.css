@@ -13,10 +13,10 @@
   }
 
   .stats-section .grid-cont div div {
-    @apply w-[410px] p-[30px] flex flex-col items-center justify-center gap-[12px];
+    @apply w-full sm:w-[30%] xl:w-[410px] p-[30px] flex flex-col items-center justify-center gap-[12px];
   }
   .stats-section .grid-cont .line {
-    @apply w-0 h-[110px] border-l-[1px] border-[#525252] p-[00px] block gap-[0px];
+    @apply hidden md:block w-0 h-[110px] border-l-[1px] border-[#525252] p-[00px] gap-[0px];
   }
   .stats-section .grid-cont div h1 {
     @apply font-Anton text-[2.5rem] tracking-[-1.2px] leading-[44px];
