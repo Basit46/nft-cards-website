@@ -12,7 +12,7 @@ const Team = () => {
   return (
     <section
       id="team"
-      className="mt-[80px] vsm:mt-[160px] mb-[80px] w-full px-[30px] relative min-h-[50vh]"
+      className="mt-[80px] vsm:mt-[160px] mb-[80px] w-full px-[20px] vsm:px-[30px] relative min-h-[50vh]"
     >
       <Description text="/WHO WE ARE" />
 

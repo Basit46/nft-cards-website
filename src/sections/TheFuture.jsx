@@ -3,7 +3,7 @@ import Description from "../components/Description";
 
 const TheFuture = () => {
   return (
-    <section className="w-full mt-[80px] vsm:mt-[160px] relative px-[30px]">
+    <section className="w-full mt-[80px] vsm:mt-[160px] relative px-[20px] vsm:px-[30px]">
       <Description text="/THE FUTURE" />
 
       <h1 className="font-Anton pt-[30px] xmd:pt-0 text-[45px] vsm:text-[50px] xmd:text-[70px] xl:text-[87px] tracking-[-1px] vsm:tracking-[-2.6px] leading-[1.1] xmd:leading-[95px]">

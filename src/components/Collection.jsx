@@ -2,8 +2,8 @@ import React from "react";
 
 const Collection = ({ img, text1, text2 }) => {
   return (
-    <div className="w-full xmd:w-[23.5%] group xmd:hover:w-[60%] h-[576px] duration-[0.4s] overflow-hidden">
-      <div className="h-[550px] rounded-[10px] overflow-hidden">
+    <div className="w-full xmd:w-[23.5%] group xmd:hover:w-[60%] h-fit vsm:h-[576px] duration-[0.4s] overflow-hidden">
+      <div className="h-fit vsm:h-[550px] rounded-[10px] overflow-hidden">
         <img
           src={img}
           className="h-full w-full group-hover:scale-110 duration-[0.4s] object-cover rounded-[10px]"

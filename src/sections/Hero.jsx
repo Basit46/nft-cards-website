@@ -26,10 +26,10 @@ const Hero = () => {
 
   return (
     <section className="hero w-full mt-[140px]">
-      <h1 className="w-full px-[30px] text-left font-Anton text-[#f54a14] text-[4.8rem] vsm:text-[6rem] xmd:text-[8.72rem] tracking-[-2.76px] leading-[1] xmd:leading-[136.62px]">
+      <h1 className="w-full px-[20px] vsm:px-[30px] text-left font-Anton text-[#f54a14] text-[4.8rem] vsm:text-[6rem] xmd:text-[8.72rem] tracking-[-2.76px] leading-[1] xmd:leading-[136.62px]">
         DIGITAL COLLECTION CARDS
       </h1>
-      <div className="relative mx-[30px] h-[350px] vsm:h-[400px] md:h-[700px] mt-[20px] rounded-[10px] overflow-hidden">
+      <div className="relative mx-[20px] vsm:mx-[30px] h-[350px] vsm:h-[400px] md:h-[700px] mt-[20px] rounded-[10px] overflow-hidden">
         {images.map((img, index) => (
           <img
             key={index}

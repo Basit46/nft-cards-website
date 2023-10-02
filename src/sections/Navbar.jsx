@@ -10,10 +10,16 @@ import logo from "../assets/logo.svg";
 import { Link as ScrollLink } from "react-scroll";
 
 const Navbar = ({ isOpen, setIsOpen }) => {
+  //To close the menu bar when a menu item is clicked
+  document.querySelectorAll("nav a").forEach((child) => {
+    child.addEventListener("click", () => {
+      setIsOpen(false);
+    });
+  });
+
   //To hide navbar when scrolling down
   //and ro reveal navbar when scrolling up
   const [show, setShow] = useState(true);
-
   useEffect(() => {
     let previousScrollPosition = 0;
     let currentScrollPosition = 0;
@@ -38,17 +44,17 @@ const Navbar = ({ isOpen, setIsOpen }) => {
     <nav
       className={`${
         show ? "translate-y-0" : "-translate-y-[100px]"
-      } fixed top-0 left-0 w-full bg-navbarBg z-[10] px-[30px] duration-500`}
+      } fixed top-0 left-0 w-full bg-navbarBg z-[10] px-[20px] vsm:px-[30px] duration-500`}
     >
       <div className="w-full flex items-center xl:gap-[200px] justify-between py-[30px] border-b-[1px] border-black">
-        <img src={logo} width="127.94" height="20.4" alt="logo" />
+        <img src={logo} width="128" height="20" alt="logo" />
 
         <div
           className={`${
             isOpen ? "h-[100vh]" : "h-0"
-          } fixed left-0 top-[86px] bg-navbarBg overflow-hidden bottom-0 w-full xl:w-fit xl:h-fit duration-500 px-[30px] xl:px-0 xl:static flex-1 flex flex-col xl:flex-row xl:justify-between`}
+          } fixed left-0 top-[86px] bg-navbarBg overflow-hidden bottom-0 w-full xl:w-fit xl:h-fit duration-500 px-[20px] vsm:px-[30px] xl:px-0 xl:static flex-1 flex flex-col xl:flex-row xl:justify-between`}
         >
-          <div className="nav-links flex flex-col xl:flex-row xl:items-center py-[20px] xl:py-0 gap-[5px] xl:gap-[20px]">
+          <div className="nav-links bg-navbarBg flex flex-col xl:flex-row xl:items-center py-[20px] xl:py-0 gap-[5px] xl:gap-[20px]">
             <ScrollLink
               to="category"
               duration={1000}

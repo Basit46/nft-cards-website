@@ -7,7 +7,7 @@ const Question = () => {
   return (
     <div
       onClick={() => setIsOpen((prev) => !prev)}
-      className="w-full h-fit bg-white rounded-[10px] p-[30px] group"
+      className="w-full h-fit bg-white rounded-[10px] p-[20px] vsm:p-[30px] group"
     >
       <div className="w-full flex justify-between items-center">
         <h1 className="font-Anton text-grey vsm:group-hover:text-orange duration-200 text-[20px] vsm:text-[25px] sm:text-[30px] tracking-[-0.3px] leading-[1.2] vsm:leading-[36px]">

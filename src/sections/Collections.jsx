@@ -8,7 +8,7 @@ import Collection from "../components/Collection";
 
 const Collections = () => {
   return (
-    <section className="mt-[160px] mb-[80px] w-full px-[30px] relative min-h-[50vh]">
+    <section className="mt-[90px] vsm:mt-[160px] mb-[80px] w-full px-[20px] vsm:px-[30px] relative min-h-[50vh]">
       <Description text="/COLLECTION" />
 
       <h1 className="font-Anton pt-[30px] xmd:pt-0 text-[45px] vsm:text-[50px] xmd:text-[70px] xl:text-[87px] tracking-[-1px] vsm:tracking-[-2.6px] leading-[1.1] xmd:leading-[95px]">

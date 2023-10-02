@@ -8,7 +8,7 @@ const Category = () => {
   return (
     <section
       id="category"
-      className="mt-[80px] vsm:mt-[160px] mb-[80px] w-full px-[30px] relative min-h-[50vh]"
+      className="mt-[80px] vsm:mt-[160px] mb-[80px] w-full px-[20px] vsm:px-[30px] relative min-h-[50vh]"
     >
       <Description text="/CATEGORY" />
 
@@ -17,8 +17,8 @@ const Category = () => {
       </h1>
 
       <div className="mt-[70px] w-full xmd:flex">
-        <div className="w-full xmd:w-[33.3%] h-[612px] py-[42px] xmd:pr-[14px] border-y-[1px] border-[#27272733]">
-          <div className="relative w-full h-[500px] group duration-200 rounded-[10px] overflow-hidden">
+        <div className="w-full xmd:w-[33.3%] h-fit vsm:h-[612px] py-[42px] xmd:pr-[14px] border-y-[1px] border-[#27272733]">
+          <div className="relative w-full h-fit vsm:h-[500px] group duration-200 rounded-[10px] overflow-hidden">
             <img
               src={img1}
               className="h-full w-full object-cover rounded-[10px]"
@@ -38,8 +38,8 @@ const Category = () => {
           </div>
         </div>
 
-        <div className="w-full xmd:w-[33.3%] h-[612px] py-[42px] xmd:px-[14px] border-b-[1px] xmd:border-y-[1px] xmd:border-x-[1px] border-[#27272733]">
-          <div className="relative w-full h-[500px] group rounded-[10px] overflow-hidden">
+        <div className="w-full xmd:w-[33.3%] h-fit vsm:h-[612px] py-[42px] xmd:px-[14px] border-b-[1px] xmd:border-y-[1px] xmd:border-x-[1px] border-[#27272733]">
+          <div className="relative w-full h-fit vsm:h-[500px] group rounded-[10px] overflow-hidden">
             <img
               src={img2}
               className="h-full w-full object-cover rounded-[10px]"
@@ -59,8 +59,8 @@ const Category = () => {
           </div>
         </div>
 
-        <div className="w-full xmd:w-[33.3%] h-[612px] py-[42px] xmd:pl-[14px] border-b-[1px] xmd:border-y-[1px] border-[#27272733]">
-          <div className="relative w-full h-[500px] group rounded-[10px] overflow-hidden">
+        <div className="w-full xmd:w-[33.3%] h-fit vsm:h-[612px] py-[42px] xmd:pl-[14px] border-b-[1px] xmd:border-y-[1px] border-[#27272733]">
+          <div className="relative w-full h-fit vsm:h-[500px] group rounded-[10px] overflow-hidden">
             <img
               src={img3}
               className="h-full w-full object-cover rounded-[10px]"
@@ -81,7 +81,7 @@ const Category = () => {
         </div>
       </div>
 
-      <button className="mt-[60px] block mx-auto px-[60px] py-[20px] rounded-[50px] bg-[#272727] hover:bg-orange text-white text-[14px] font-medium duration-300">
+      <button className="mt-[30px] vsm:mt-[60px] block mx-auto px-[60px] py-[20px] rounded-[50px] bg-[#272727] hover:bg-orange text-white text-[14px] font-medium duration-300">
         SEE ALL CATEGORIES
       </button>
     </section>

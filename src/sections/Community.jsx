@@ -13,32 +13,35 @@ const Community = () => {
   const slide1Ref = useRef();
   const slide2Ref = useRef();
 
-  // useEffect(() => {
-  //   gsap.to(slide1Ref.current, {
-  //     y: -150,
-  //     duration: 3,
-  //     scrollTrigger: {
-  //       trigger: sectionRef.current,
-  //       scrub: 2,
-  //       start: "top 30%",
-  //     },
-  //   });
+  useEffect(() => {
+    if (window.innerWidth < 1280) {
+      return;
+    }
+    gsap.to(slide1Ref.current, {
+      y: -150,
+      duration: 3,
+      scrollTrigger: {
+        trigger: sectionRef.current,
+        scrub: 2,
+        start: "top 30%",
+      },
+    });
 
-  //   gsap.to(slide2Ref.current, {
-  //     y: 150,
-  //     duration: 3,
-  //     scrollTrigger: {
-  //       trigger: sectionRef.current,
-  //       scrub: 2,
-  //       start: "top 30%",
-  //     },
-  //   });
-  // }, []);
+    gsap.to(slide2Ref.current, {
+      y: 150,
+      duration: 3,
+      scrollTrigger: {
+        trigger: sectionRef.current,
+        scrub: 2,
+        start: "top 30%",
+      },
+    });
+  }, []);
 
   return (
     <section
       ref={sectionRef}
-      className="mt-[130px] mx-[30px] h-fit xl:h-[543px] bg-grey py-[40px] xl:py-0 px-[20px] xl:px-0 text-white rounded-[10px] flex flex-col-reverse xl:flex-row justify-center gap-[80px] items-center"
+      className="mt-[130px] mx-[20px] vsm:mx-[30px] h-fit xl:h-[543px] bg-grey py-[40px] xl:py-0 px-[20px] xl:px-0 text-white rounded-[10px] flex flex-col-reverse xl:flex-row justify-center gap-[80px] items-center"
     >
       <div className="w-full xl:w-fit h-full overflow-y-hidden">
         <div className="w-full xl:w-fit h-fit flex gap-[30px] xl:gap-[50px]">
@@ -92,7 +95,7 @@ const Community = () => {
         <h1 className="font-Anton text-center text-[50px] xl:text-[87px] tracking-[-2.6px] leading-[1.1] xl:leading-[95px]">
           Join The Community
         </h1>
-        <p className="w-[80%] vsm:w-full mt-[20px] mb-[40px] text-[#949494] tracking-[-0.8px] text-center">
+        <p className="w-[90%] vsm:w-full mt-[20px] mb-[40px] text-[#949494] tracking-[-0.8px] text-center">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
           iusto laudantium, magni eum id eos rerum.
         </p>

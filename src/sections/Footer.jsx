@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer
       id="contact"
-      className="mt-[80px] mb-[20px] py-[80px] min-h-[30vh] border-y-black border-[1px] mx-[30px] flex flex-col xl:flex-row gap-[40px] xl:gap-0 justify-between"
+      className="mt-[80px] mb-[20px] py-[80px] min-h-[30vh] border-y-black border-[1px] mx-[20px] vsm:mx-[30px] flex flex-col xl:flex-row gap-[40px] xl:gap-0 justify-between"
     >
       <div>
         <img src={logo} width={205} alt="logo" />

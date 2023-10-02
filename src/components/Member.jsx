@@ -2,8 +2,8 @@ import React from "react";
 
 const Member = ({ img, name, role }) => {
   return (
-    <div className="w-full vsm:w-[410px] h-[527px]">
-      <div className="h-[480px] overflow-hidden rounded-[10px] group">
+    <div className="w-full vsm:w-[410px] h-fit vsm:h-[527px]">
+      <div className="h-fit vsm:h-[480px] overflow-hidden rounded-[10px] group">
         <img
           src={img}
           className="h-full w-full object-cover group-hover:scale-[1.1] duration-700 "
