@@ -39,7 +39,7 @@ const Hero = () => {
       gsap.fromTo(
         char,
         { opacity: 0 },
-        { opacity: 1, duration: 2, delay: index * 0.05 }
+        { opacity: 1, duration: 2, delay: index * 0.1 }
       );
     });
   }, []);
