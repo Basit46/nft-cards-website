@@ -5,9 +5,9 @@ const Question = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div
+    <button
       onClick={() => setIsOpen((prev) => !prev)}
-      className="w-full h-fit bg-white rounded-[10px] p-[20px] vsm:p-[30px] group"
+      className="w-full text-left h-fit bg-white rounded-[10px] p-[20px] vsm:p-[30px] group"
     >
       <div className="w-full flex justify-between items-center">
         <h1 className="font-Anton text-grey vsm:group-hover:text-orange duration-200 text-[20px] vsm:text-[25px] sm:text-[30px] tracking-[-0.3px] leading-[1.2] vsm:leading-[36px]">
@@ -27,7 +27,7 @@ const Question = () => {
           exercitationem officiis odit consectetur adipisicing
         </p>
       </div>
-    </div>
+    </button>
   );
 };
 
